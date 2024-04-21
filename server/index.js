@@ -8,7 +8,7 @@ const app = express()
 
 const stripe = new Stripe(STRIPE_PRIVATE_KEY)
 
-app.use(cors('http://localhost:3000/checkout'))
+app.use(cors('https://www.elephantarchives.com/shop'))
 app.use(express.json())
 
 app.post('/api/checkout', async (req, res) => {
